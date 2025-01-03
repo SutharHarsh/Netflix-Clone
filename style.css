@@ -807,10 +807,11 @@ nav .buttons > :nth-child(2) {
   top: 80px;
 }
 
-@media (min-width:320px) and (max-width: 426px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
-  
+@media (min-width: 320px) and (max-width: 426px) {
+  /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+
   /* navigation bar ---------- */
-  
+
   nav {
     margin-top: 10px;
   }
@@ -901,7 +902,6 @@ nav .buttons > :nth-child(2) {
     margin-top: -170px;
   }
 
-
   /* Trending Now ---------- */
 
   .trending_now {
@@ -935,7 +935,7 @@ nav .buttons > :nth-child(2) {
     position: none;
     min-width: 0vw;
   }
- 
+
   .content_box .content_type_select .content_type {
     width: 70vw;
     margin-left: 0px;
@@ -981,7 +981,7 @@ nav .buttons > :nth-child(2) {
 
   /* Benefits Section ---------- */
 
-  .benefits_section > span{
+  .benefits_section > span {
     margin-left: 42px;
   }
 
@@ -996,7 +996,7 @@ nav .buttons > :nth-child(2) {
     background: black;
     margin-top: 0px;
   }
-  
+
   .faqs_container > span {
     text-align: center;
     margin-left: 0px;
@@ -1020,7 +1020,6 @@ nav .buttons > :nth-child(2) {
     padding-right: 10px;
   }
 
-
   .bottom_login {
     flex-direction: column;
     justify-content: center;
@@ -1040,7 +1039,7 @@ nav .buttons > :nth-child(2) {
   }
 
   .bottom_login :nth-child(2) {
-    width: 50vw;
+    width: 40vw;
     height: 35px;
     font-size: medium;
   }
@@ -1067,27 +1066,197 @@ nav .buttons > :nth-child(2) {
     height: 100px;
     background: black;
   }
-  
+
   .netflix {
     position: none;
     top: 50px;
     background: black;
     color: rgb(159, 159, 159);
   }
-
 }
-@media (min-width:480px)  { /* smartphones, Android phones, landscape iPhone */ }
-@media (min-width:600px)  { /* portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android) */ }
-@media (min-width:801px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
-@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
-@media (min-width:1281px) { /* hi-res laptops and desktops */ }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  
+  /* Hero Content ---------- */
 
+  .content_box {
+    margin-top: 20px;
+  }
 
+  .content {
+    min-width: 90vw;
+    row-gap: 10px;
+  }
 
+  .content > :nth-child(1) {
+    font-size: 32px;
+  }
 
+  .content > :nth-child(2) {
+    font-size: 13px;
+  }
 
+  .content > :nth-child(3) {
+    font-size: 13px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
 
+  .content .login :nth-child(1) {
+    margin-top: 0px;
+  }
+
+  .content .login :nth-child(1)::placeholder {
+    font-size: small;
+    position: absolute;
+  }
+
+  .content .login :nth-child(2) {
+    width: 40vw;
+    height: 40px;
+    font-size: medium;
+  }
+  
+  /* Gradient Line ---------- */
+
+  .curve_container .gradient_box {
+    margin-top: 100px;
+  }
+
+  /* Trending Now Cards ---------- */
+
+  .content_type_select {
+    position: absolute;
+    top: -20px;
+  }
+
+  .trending_now {
+    margin-top: 0px;
+  }
+
+  .trending_now .cards {
+    margin-bottom: 20px;
+    display: grid; /* Switch to grid layout */
+    grid-template-columns: repeat(2, 1fr); /* 2 equal-width columns */
+    grid-template-rows: repeat(3, auto); /* 3 rows with automatic height */
+    justify-items: center; /* Align items horizontally to the center */
+    align-items: center; /* Align items vertically to the center */
+    gap: 20px; /* Space between grid items */
+  }
+  
+  .cards .card1::before {
+    top: 2.8in;
+    left: 0.6in;
+  }
+  
+  .cards .card2::before {
+    top: 2.8in;
+    left: 4.6in;
+  }
+  
+  .cards .card3::before {
+    top: 6in;
+    left: 0.6in;
+  }
+  
+  .cards .card4::before {
+    top: 6in;
+    left: 4.6in;
+  }
+  
+  .cards .card5::before {
+    top: 9.2in;
+    left: 0.6in;
+  }
+  
+
+  /* Benefits Section ---------- */
+
+  .benefits_section > span {
+    margin-left: 85px;
+  }
+
+  .benefits {
+    row-gap: 20px;
+  }
+
+  /* FAQ ---------- */
+
+  .faqs_container {
+    margin-top: 0;
+    padding-top: 50px;
+  }
+
+  .faqs_container > span {
+    margin: auto;
+    padding-bottom: 15px;
+  }
+
+  /* Bottom Login ---------- */
+
+  .bottom_login_container span {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .bottom_login {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+  }
+
+  .bottom_login :nth-child(1) {
+    width: 60vw;
+    padding-left: 0px;
+    height: 35px;
+  }
+
+  .bottom_login :nth-child(1)::placeholder {
+    font-size: medium;
+    padding-left: 10px;
+  }
+
+  .bottom_login :nth-child(2) {
+    width: 20vw;
+    height: 40px;
+    font-size: medium;
+  }
+
+  /* Footer ---------- */
+
+  .footer {
+    background: black;
+    background: black;
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+
+  .footer .link_cols {
+    column-gap: 60px;
+  }
+
+  .netflix_box {
+    height: 100px;
+    background: black;
+  }
+
+  .netflix {
+    position: none;
+    top: 50px;
+    background: black;
+    color: rgb(159, 159, 159);
+  }
+}
+@media (min-width: 801px) {
+  /* tablet, landscape iPad, lo-res laptops ands desktops */
+}
+@media (min-width: 1025px) {
+  /* big landscape tablets, laptops, and desktops */
+}
+@media (min-width: 1281px) {
+  /* hi-res laptops and desktops */
+}
 
 .container {
   height: 900px;
