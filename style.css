@@ -807,7 +807,7 @@ nav .buttons > :nth-child(2) {
   top: 80px;
 }
 
-@media (min-width:320px) and (max-width: 425px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+@media (min-width:320px) and (max-width: 426px) { /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
   
   /* navigation bar ---------- */
   
@@ -956,26 +956,26 @@ nav .buttons > :nth-child(2) {
   }
 
   .cards .card1::before {
-    top: 50vh;
+    top: 3.1in;
   }
 
   .cards .card2::before {
-    top: 99vh;
+    top: 6.3in;
     left: 12vw;
   }
 
   .cards .card3::before {
-    top: 149vh;
+    top: 9.5in;
     left: 12vw;
   }
 
   .cards .card4::before {
-    top: 199vh;
+    top: 12.7in;
     left: 12vw;
   }
 
   .cards .card5::before {
-    top: 248vh;
+    top: 15.9in;
     left: 12vw;
   }
 
